@@ -10,9 +10,9 @@ with c0:
     if country:
         st.image(
             f'{country.lower()}_kultura.webp',
-            use_container_width=True
+            use_container_width=True #rozciągamy na całą szerokość
             )
-country_df=df[df['Kraj'] == country]
+country_df=df[df['Kraj'] == country] #dataframe dotyczące danego kraju
 with c1:
     st.dataframe(
         country_df,
